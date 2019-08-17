@@ -4,7 +4,8 @@
     "strict": true,
     "module": "esNext",
     "lib": ["ES2015"],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
   "include": [
     "./src/app.ts",

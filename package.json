@@ -21,6 +21,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/preset-env": "^7.5.5",
+    "@types/jest": "^24.0.17",
     "@vue/test-utils": "^1.0.0-beta.25",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
@@ -32,6 +33,7 @@
     "node-sass": "^4.12.0",
     "rimraf": "^3.0.0",
     "sass-loader": "^7.2.0",
+    "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
@@ -55,7 +57,8 @@
     ],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest",
+      "^.+\\.tsx?$": "ts-jest"
     },
     "moduleNameMapper": {
       "^SRC/(.*)$": "<rootDir>/src/$1",
