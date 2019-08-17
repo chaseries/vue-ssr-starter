@@ -6,17 +6,19 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import LayoutHeader from "VUE_COMPONENT/layout/header/LayoutHeader.vue";
 import LayoutFooter from "VUE_COMPONENT/layout/footer/LayoutFooter.vue";
 
-export default {
+
+export default Vue.extend({
   name: "app",
   components: {
     LayoutHeader,
     LayoutFooter
   }
-};
+});
 </script>
 
 <style lang="sass">
